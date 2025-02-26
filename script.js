@@ -1,15 +1,15 @@
-console.log("script loaded");
+document.getElementById("formulaClass").style.visibility = "hidden"; 
 
 document.addEventListener("DOMContentLoaded", function() {
     const button = document.getElementById("formulaButton") 
     button.addEventListener("click", clicked);
-    function clicked(s) {
-        const lol = document.getElementById("formulaClass").style.visibility == "hidden"; 
-        if(lol == "hidden") {
-            lol = "visible"; 
+    function clicked() {
+        const formulaButton = document.getElementById("formulaClass");
+        if(formulaButton.style.visibility == "hidden") {
+            document.getElementById("formulaClass").style.visibility = "visible"; 
         }
         else {
-            lol = "hidden"; 
+            document.getElementById("formulaClass").style.visibility = "hidden"; 
         }
     }
 });
