@@ -4,12 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Investment Banking Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+        }
+        .MainDiv {
+            height: 550px;
+            width: 800px;
+            border: 5px black solid;
+            background-color: rgb(215,219,216);
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .mainContainer {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #formulaButton {
+            height: 40px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+    </style>
 </head>
 <body>
-    <h1 style = "font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;">Investment Banking Calculator</h1>
-    <div class="MainDiv">
+    <div class="mainContainer">
+        <h1 style = "font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Investment Banking Calculator</h1>
 
+        <div class="MainDiv"> 
+
+        </div>
+        <button id="formulaButton">Click to see formula</button>
     </div>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
