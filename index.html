@@ -13,6 +13,9 @@
             border-radius: 50px;
             display: flex;
             justify-content: center;
+            gap: 10px;
+            padding: 20px;
+            flex-direction: column;
         }
 
         .mainContainer {
@@ -43,17 +46,27 @@
         
         <h3 id="author">By: Aditya Aysola</h3>
         <div class="MainDiv"> 
+            <div class="inputGroup">
+                <h3>Enter the initial amount (P-value)</h3>
+                <input type="number" placeholder="Enter the principle amount">
+            </div>
 
+            <div class = "inputGroup">
+                <h3>Enter the number of times compounded</h3>
+                <input type="number" placeholder="Number of times compounded">
+            </div>
         </div>
+
+        <br><br>
         <button id="formulaButton">Click to see formula</button>
         
         <div id="formulaClass">
-            <h2>The formula is: A=P(1+r/n)^(nt)</h2>
-            <h2>P = principle amount (investment) <br> 
+            <h2 style = "font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">The formula is: A=P(1+r/n)^(nt)</h2>
+            <h3 style = "font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">P = principle amount (investment) <br> 
                 r = Rate (convert percent to decimal) <br>
                 n = Number of times compounded <br>
                 t = Time in years <br>
-                A = Future Value</h2>
+                A = Future Value</h3>
         </div>
     </div>
 
