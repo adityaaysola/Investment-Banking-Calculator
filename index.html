@@ -16,6 +16,7 @@
             gap: 10px;
             padding: 20px;
             flex-direction: column;
+            align-items: center;
         }
 
         .mainContainer {
@@ -38,22 +39,54 @@
         #heading { 
             margin-bottom: 5px;
         }
+
+        .inputGroup {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .instruction {
+            display: flex;
+            justify-content: center;
+        }
+
+        .input {
+            height: 30px;
+            width: 250px;
+        }
+
+
     </style>
 </head>
 <body>
     <div class="mainContainer">
         <h1 id = "heading" style = "font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Investment Banking Calculator</h1>
-        
         <h3 id="author">By: Aditya Aysola</h3>
         <div class="MainDiv"> 
             <div class="inputGroup">
-                <h3>Enter the initial amount (P-value)</h3>
-                <input type="number" placeholder="Enter the principle amount">
+                <h3 class="instruction">Enter the initial amount (P-value)</h3>
+                <input id="i1" class= "input" type="number" placeholder="Enter the principle amount">
             </div>
 
             <div class = "inputGroup">
-                <h3>Enter the number of times compounded</h3>
-                <input type="number" placeholder="Number of times compounded">
+                <h3 class="instruction">Enter the number of times compounded</h3>
+                <input id="i2" class= "input" type="number" placeholder="Number of times compounded">
+            </div>
+
+            <div class = "inputGroup">
+                <h3 class="instruction">Enter the rate</h3>
+                <input id="i3" class= "input" type="number" placeholder="Rate">
+            </div>
+            
+            <div class = "inputGroup">
+                <h3 class="instruction">Enter the time in years</h3>
+                <input id="i4" class= "input" type="number" placeholder="Time in years">
+            </div>
+
+            <div class="inputGroup">
+                <button id="calculateButton" style=" height: 25px; width: 100px; border-radius: 10px; border: 2px solid black;">Calculate</button>
             </div>
         </div>
 
