@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function calculateClicked() {
-        console.log("pp")
         const i1 = document.getElementById("i1"); 
         const i2 = document.getElementById("i2"); 
         const i3 = document.getElementById("i3"); 
