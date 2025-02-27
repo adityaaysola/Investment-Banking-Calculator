@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function() {
     function formulaClicked() {
         const formulaButton = document.getElementById("formulaClass");
         if(formulaButton.style.visibility == "hidden") {
-            document.getElementsByClassName("formulaClass").style.visibility = "visible"; 
+            document.getElementById("formulaClass").style.visibility = "visible"; 
         }
         else {
-            document.getElementsByClassName("formulaClass").style.visibility = "hidden"; 
+            document.getElementById("formulaClass").style.visibility = "hidden"; 
         }
     }
 
