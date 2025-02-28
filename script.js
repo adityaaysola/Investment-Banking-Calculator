@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+
     const formulaButton = document.getElementById("formulaButton"); 
     const calculateButton = document.getElementById("calculateButton"); 
     formulaButton.addEventListener("click", formulaClicked);
@@ -19,6 +20,11 @@ document.addEventListener("DOMContentLoaded", function() {
         const i2 = document.getElementById("i2"); 
         const i3 = document.getElementById("i3"); 
         const i4 = document.getElementById("i4"); 
+        console.log("pp")
+        const p = document.getElementById("i1"); 
+        const n = document.getElementById("i2"); 
+        const r = document.getElementById("i3"); 
+        const t = document.getElementById("i4"); 
         let v1 = i1.value
         let v2 = i2.value
         let v3 = i3.value
@@ -27,6 +33,8 @@ document.addEventListener("DOMContentLoaded", function() {
         i2.value = ""; 
         i3.value = ""; 
         i4.value = ""; 
+        let A = P*(Math.pow(1+r/n, nt));
+        
     }
 });
 
