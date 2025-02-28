@@ -6,7 +6,6 @@
     <title>Investment Banking Calculator</title>
     <style>
         .MainDiv {
-            height: 440px;
             width: 800px;
             border: 5px black solid;
             background-color: rgb(215,219,216);
@@ -45,6 +44,7 @@
             justify-content: center;
             flex-direction: column;
             align-items: center;
+            gap: 2px;
         }
 
         .instruction {
@@ -61,10 +61,22 @@
             display:none; 
         }
 
-        #answerLabel {
+        #answerSection {
+            display: flex;
             height: 50px;
+            width: 350px;
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            border-radius: 10px;
+            gap: 4px;
+        }
+
+        .options {
             width: 50px;
-            background-color: red;
+            align-content: center;
+            border: 2px solid black;
         }
     </style>
 </head>
@@ -93,12 +105,18 @@
                 <input id="i4" class= "input" type="number" placeholder="Time in years">
             </div>
 
-            <div id="answerLabel">
-                
+            <div class="inputGroup">
+                <p>Do you want to round your answer?</p>
+                <button class="options" id="yesButton">Yes</button>
+                <button class="options" id="noButton">No</button>
             </div>
 
-            <div class="inputGroup">
+            <div>
                 <button id="calculateButton" style=" height: 25px; width: 100px; border-radius: 10px; border: 2px solid black;">Calculate</button>
+            </div>  
+
+            <div id="answerSection">
+                <p id="answerLabel">Your final amount after compounded interest is: </p>
             </div>
         </div>
 
