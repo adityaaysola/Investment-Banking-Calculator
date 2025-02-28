@@ -6,12 +6,12 @@ document.addEventListener("DOMContentLoaded", function() {
     calculateButton.addEventListener("click", calculateClicked); 
     
     function formulaClicked() {
-        const formulaButton = document.getElementById("formulaClass");
-        if(formulaButton.style.visibility == "hidden") {
-            document.getElementById("formulaClass").style.visibility = "visible"; 
-        }
-        else {
-            document.getElementById("formulaClass").style.visibility = "hidden"; 
+        const formulaElement = document.getElementById("formulaClass");
+    
+        if (formulaElement.style.display === "none" || formulaElement.style.display === "") {
+            formulaElement.style.display = "block";  // Show formula
+        } else {
+            formulaElement.style.display = "none";   // Hide formula
         }
     }
 
@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function() {
         const i2 = document.getElementById("i2"); 
         const i3 = document.getElementById("i3"); 
         const i4 = document.getElementById("i4"); 
-        console.log("pp")
         const p = document.getElementById("i1"); 
         const n = document.getElementById("i2"); 
         const r = document.getElementById("i3"); 
@@ -33,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
         i2.value = ""; 
         i3.value = ""; 
         i4.value = ""; 
-        let A = P*(Math.pow(1+r/n, nt));
+        let A = p*(Math.pow(1+r/n, n*t));
         
     }
 });
