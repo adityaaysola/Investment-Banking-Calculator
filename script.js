@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 let n = i2.value
                 let r = i3.value
                 let t = i4.value
-                let A = p*(Math.pow(1+r/n, n*t));
-                display.textContent = display.textContent.concat("Your final amount after compounded interest is: ", A);     
+                let A = Math.round((p * Math.pow((1 + r / n), n * t))*100)/100;
+                display.textContent = display.textContent.concat("Your final amount after compounded interest is: $", A);     
             }
             else {
                 alert("Not enough data, please enter all values!"); 
