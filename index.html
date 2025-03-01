@@ -78,23 +78,11 @@
             align-content: center;
             border: 2px solid black;
         }
-
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.5s ease, transform 0.6s ease;
-        }
-
-        .fade-in.appear {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
     </style>
 </head>
 <body>
     <div class="mainContainer">
-        <h1 class = "fade-in" id = "heading" style = "font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Investment Banking Calculator</h1>
+        <h1 id = "heading" style = "font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Investment Banking Calculator</h1>
         <h3 id="author">By: Aditya Aysola</h3>
         <div class="MainDiv"> 
             <div class="inputGroup">
@@ -108,19 +96,13 @@
             </div>
 
             <div class = "inputGroup">
-                <h3 class="instruction">Enter the rate</h3>
+                <h3 class="instruction">Enter the rate (0.04 if 4%)</h3>
                 <input id="i3" class= "input" type="number" placeholder="Rate">
             </div>
             
             <div class = "inputGroup">
                 <h3 class="instruction">Enter the time in years</h3>
                 <input id="i4" class= "input" type="number" placeholder="Time in years">
-            </div>
-
-            <div class="inputGroup">
-                <p>Do you want to round your answer?</p>
-                <button class="options" id="yesButton">Yes</button>
-                <button class="options" id="noButton">No</button>
             </div>
 
             <div>
