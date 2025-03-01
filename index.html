@@ -78,11 +78,23 @@
             align-content: center;
             border: 2px solid black;
         }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.5s ease, transform 0.6s ease;
+        }
+
+        .fade-in.appear {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
     </style>
 </head>
 <body>
     <div class="mainContainer">
-        <h1 id = "heading" style = "font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Investment Banking Calculator</h1>
+        <h1 class = "fade-in" id = "heading" style = "font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Investment Banking Calculator</h1>
         <h3 id="author">By: Aditya Aysola</h3>
         <div class="MainDiv"> 
             <div class="inputGroup">
